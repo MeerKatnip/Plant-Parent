@@ -1,7 +1,6 @@
-﻿
-# Plant Parent
+﻿# Plant Parent
 
-![Plant Parent logo image](https://photos.app.goo.gl/VZczqPPizcG55Cow9)
+![Plant Parent logo image](/Users/imachome/Plant-Parent/Plant-Parent/public/images/Plant-Parent-logo.png)
 
 #### Purpose of the app:
 
@@ -15,7 +14,7 @@ A user will create an account with an email address and password. The user will 
 
 - Plants are added to the user's account database by name. Users will be able to access info about the plant species and care instructions including watering, sunlight, and nutrient needs. Individual plant needs are broken down by user's geolocation tag and current weather patterns to advise them of when to water or fertilize a plant. App will display the amount of days remaining until it's time to water or fertilize a plant, e.g "Water me in two days", "Water me today!", "Feed me in 10 days."
 - Users can name their plant, including taking a "baby photo" of their plant to document the growth of their little sprout.
-- 
+-
 
 ## Site Preview
 
@@ -24,6 +23,7 @@ A user will create an account with an email address and password. The user will 
 ##### Login Page:
 
 ## Live Link
+
 [sample link](http://www.google.com)
 
 ## This site was built by:
@@ -32,7 +32,7 @@ A user will create an account with an email address and password. The user will 
 
 ## Database and APIs used:
 
-[iNaturalist API]([https://www.inaturalist.org/pages/developers](https://www.inaturalist.org/pages/developers))
+[iNaturalist API](https://www.inaturalist.org/pages/developers)
 
 [OpenWeather API](https://openweathermap.org/api)
 
