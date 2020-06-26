@@ -1,6 +1,6 @@
 ﻿# Plant Parent
 
-![Plant Parent logo image](/Users/imachome/Plant-Parent/Plant-Parent/public/images/Plant-Parent-logo.png)
+![Plant Parent logo image](/Users/imachome/Plant-Parent/Plant-Parent/public/images/plant-parent-logo.png)
 
 #### Purpose of the app:
 
