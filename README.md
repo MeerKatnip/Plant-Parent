@@ -1,6 +1,5 @@
-﻿# Plant Parent
-
-![Plant Parent logo image](images/plant-parent-logo.png)
+﻿<p align="center">
+<img src="images/plant-parent-logo.png">
 
 #### Purpose of the app:
 
