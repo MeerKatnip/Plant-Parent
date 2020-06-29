@@ -31,12 +31,12 @@ A user will create an account with an email address and password. The user will 
 
 ## Database and APIs used:
 
-[iNaturalist API](https://www.inaturalist.org/pages/developers)
+[Trefle Plant API](https://trefle.io)
 
 [OpenWeather API](https://openweathermap.org/api)
 
 ## Languages and Frameworks used:
 
-JavaScript, React, Redux, Node.js
+JavaScript, React, Redux, Node.js, PostgreSQL, Bootstrap
 
 > Written by Amy Roy with [StackEdit](https://stackedit.io/).

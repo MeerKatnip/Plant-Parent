@@ -7,6 +7,7 @@ const bodyParser = require("body-parser");
 const { Client } = require("pg");
 const connectionString =
   "postgres://postgres:postgres@localhost:5432/plant-parent";
+// const axios = require("axios");
 
 app.use(express.json());
 app.use(express.urlencoded());
