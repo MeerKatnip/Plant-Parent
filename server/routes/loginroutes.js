@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const PORT = process.env.PORT || 4000;
-const login = require("./routes/loginroutes");
+// const login = require("./routes/loginroutes");
 const bodyParser = require("body-parser");
 const { Client } = require("pg");
 const connectionString =
@@ -33,6 +33,9 @@ exports.register = async function (req, res) {
   });
 };
 
+exports.getLogin = function (req, res) {
+  res.send("login");
+};
 exports.login = async function (req, res) {
   let email = req.body.email;
   let password = req.body.password;
