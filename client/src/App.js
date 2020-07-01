@@ -1,16 +1,55 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Component } from "react";
 // eslint-disable-next-line
 import logo from "./logo.svg";
 import "./App.css";
+// import { BaseLayout } from "./components/BaseLayout";
 // import Header from "./components/Header/Header";
 // import DisplayPlants from "./components/DisplayPlants";
-// import RegistrationForm from "./components/RegistrationForm/RegistrationForm";
+import RegistrationForm from "./components/RegistrationForm/RegistrationForm";
+import Login from "./components/Login";
 // import { BrowserRouter, Switch, Route } from "react-router-dom";
 // import { BaseLayout, Menu } from "./components/BaseLayout";
+import { NavLink } from "react-router-dom";
+import DisplayPlants from "./components/DisplayPlants";
 
-function App() {
-  return <h1> homepage </h1>;
+export class App extends Component {
+  render() {
+    return (
+      <div>
+        <Menu />
+        <h1>Plant Parent</h1>
+        <Login />
+        <p>
+          Register:
+          <RegistrationForm />
+        </p>
+        {/* {this.props.children} */}
+        <p>Copyright 2020</p>
+      </div>
+    );
+  }
 }
+
+export class Menu extends Component {
+  render() {
+    return (
+      <div>
+        <ul>
+          <li>
+            <NavLink to="/">Home</NavLink>
+          </li>
+          <li>
+            <NavLink to="/api/plants">Plants</NavLink>
+          </li>
+          <li>
+            <NavLink to="/addplant">Add Plant</NavLink>
+          </li>
+        </ul>
+      </div>
+    );
+  }
+}
+
 export default App;
 
 // componentDidMount() {

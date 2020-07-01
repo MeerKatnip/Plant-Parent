@@ -8,6 +8,10 @@ const { Client } = require("pg");
 const connectionString =
   "postgres://postgres:postgres@localhost:5432/plant-parent";
 
+const client = new Client({
+  connectionString: connectionString,
+});
+
 exports.register = async function (req, res) {
   const password = req.body.password;
   const encryptedPassword = await bcrypt.hash(password, saltRounds);
