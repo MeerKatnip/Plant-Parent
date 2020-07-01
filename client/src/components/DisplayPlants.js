@@ -19,7 +19,7 @@ function DisplayPlants() {
     return (
       <li>
         <label>Plant Name: {plant.name}</label>
-        <img src={formatPlantURL(plant.photoURL)} alt="plant image" />
+        <img src={formatPlantURL(plant.photoURL)} alt="plant" />
         <label>Light: {plant.light}</label>
         <label>Water: {plant.water}</label>
         <label>Lifespan: {plant.lifespan}</label>
@@ -35,5 +35,3 @@ function DisplayPlants() {
 }
 
 export default DisplayPlants;
-
-//needs to be fetching from Trefle API
