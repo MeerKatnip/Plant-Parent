@@ -18,11 +18,22 @@ function DisplayPlants() {
   const plantItems = plants.map((plant) => {
     return (
       <li>
-        <label>Plant Name: {plant.name}</label>
-        <img src={formatPlantURL(plant.photoURL)} alt="plant" />
-        <label>Light: {plant.light}</label>
-        <label>Water: {plant.water}</label>
-        <label>Lifespan: {plant.lifespan}</label>
+        <dl>
+          <dt>{plant.name}</dt>
+          <img src={formatPlantURL(plant.photoURL)} alt="plant" />
+          <dd>
+            <b>Light Needs: </b>
+            {plant.light}
+          </dd>
+          <dd>
+            <b>Water/Soil Needs: </b>
+            {plant.water}
+          </dd>
+          <dd>
+            <b>Lifespan: </b>
+            {plant.lifespan}
+          </dd>
+        </dl>
       </li>
     );
   });
