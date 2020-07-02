@@ -9,6 +9,7 @@ import { NavLink } from "react-router-dom";
 import DisplayPlants from "./components/DisplayPlants";
 import AddPlant from "./components/AddPlant";
 import PlantDetails from "./components/PlantDetails";
+import About from "./components/About";
 // import RegistrationForm from "./components/RegistrationForm/RegistrationForm";
 // import Login from "./components/Login";
 
@@ -21,6 +22,7 @@ ReactDOM.render(
           <Route component={DisplayPlants} path="/api/plants" exact />
           <Route component={AddPlant} path="/addplant" />
           <Route component={PlantDetails} path="/displayplants/:plantId" />
+          <Route component={About} path="/about" />
           {/* <Route component={RegistrationForm} path="/register" /> */}
           {/* <Route component={Login} path="/login" /> */}
         </Switch>

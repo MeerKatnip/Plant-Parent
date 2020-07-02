@@ -17,7 +17,9 @@ function DisplayPlants() {
 
   const plantItems = plants.map((plant) => {
     return (
-      <li>
+      <div>
+        <h4>My Plants</h4>
+
         <dl>
           <dt>{plant.name}</dt>
           <img src={formatPlantURL(plant.photoURL)} alt="plant" />
@@ -34,7 +36,7 @@ function DisplayPlants() {
             {plant.lifespan}
           </dd>
         </dl>
-      </li>
+      </div>
     );
   });
 
