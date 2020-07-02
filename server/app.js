@@ -2,20 +2,20 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const PORT = process.env.PORT || 4000;
-const login = require("./routes/loginroutes");
+// const login = require("./routes/loginroutes");
 const bodyParser = require("body-parser");
 const { Client } = require("pg");
 const Plant = require("./models/plant");
-const User = require("./models/user");
+// const User = require("./models/user");
 const connectionString =
   "postgres://postgres:postgres@localhost:5432/plant-parent";
 const models = require("./models");
 const createError = require("http-errors");
 const path = require("path");
 const cookieParser = require("cookie-parser");
-const logger = require("./routes");
+// const logger = require("./routes");
 
-const indexRouter = require("./routes");
+// const indexRouter = require("./routes");
 
 const client = new Client({
   connectionString: connectionString,
@@ -29,7 +29,7 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(express.static("public"));
-app.use(logger("dev"));
+// app.use(logger("dev"));
 app.use(cookieParser());
 
 app.use(function (req, res, next) {
@@ -46,10 +46,10 @@ const router = express.Router();
 //   res.json({ message: "connection successful" });
 // });
 
-app.get("/users", async (req, res) => {
-  let users = await models.User.findAll();
-  res.json(users);
-});
+// app.get("/users", async (req, res) => {
+//   let users = await models.User.findAll();
+//   res.json(users);
+// });
 
 // app.get("/", function (req, res, next) {
 //   client.query("SELECT * FROM User where id = $1", [1], function (err, result) {
@@ -71,6 +71,10 @@ app.get("/users", async (req, res) => {
 // //route to handle user registration
 // app.post("/register", login.register);
 // app.post("/login", login.login);
+
+app.get("/", (req, res) => {
+  res.send("homepage");
+});
 
 app.get("/api/plants", async (req, res) => {
   let plants = await models.Plant.findAll();

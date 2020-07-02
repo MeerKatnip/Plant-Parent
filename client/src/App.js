@@ -3,10 +3,6 @@ import React, { useState, useEffect, Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 // import { BaseLayout } from "./components/BaseLayout";
-// import Header from "./components/Header/Header";
-// import DisplayPlants from "./components/DisplayPlants";
-import RegistrationForm from "./components/RegistrationForm/RegistrationForm";
-import Login from "./components/Login";
 // import { BrowserRouter, Switch, Route } from "react-router-dom";
 // import { BaseLayout, Menu } from "./components/BaseLayout";
 import { NavLink } from "react-router-dom";
@@ -18,11 +14,7 @@ export class App extends Component {
       <div>
         <Menu />
         <h1>Plant Parent</h1>
-        <Login />
-        <p>
-          Register:
-          <RegistrationForm />
-        </p>
+        <DisplayPlants />
         {/* {this.props.children} */}
         <p>Copyright 2020</p>
       </div>
