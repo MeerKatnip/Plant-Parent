@@ -3,14 +3,11 @@ import React, { useState, useEffect, Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 // import { BaseLayout } from "./components/BaseLayout";
-// import Header from "./components/Header/Header";
-// import DisplayPlants from "./components/DisplayPlants";
-import RegistrationForm from "./components/RegistrationForm/RegistrationForm";
-import Login from "./components/Login";
 // import { BrowserRouter, Switch, Route } from "react-router-dom";
 // import { BaseLayout, Menu } from "./components/BaseLayout";
 import { NavLink } from "react-router-dom";
 import DisplayPlants from "./components/DisplayPlants";
+import About from "./components/About";
 
 export class App extends Component {
   render() {
@@ -18,13 +15,9 @@ export class App extends Component {
       <div>
         <Menu />
         <h1>Plant Parent</h1>
-        <Login />
-        <p>
-          Register:
-          <RegistrationForm />
-        </p>
+        <About />
+        <DisplayPlants />
         {/* {this.props.children} */}
-        <p>Copyright 2020</p>
       </div>
     );
   }
@@ -39,7 +32,13 @@ export class Menu extends Component {
             <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <NavLink to="/api/plants">Plants</NavLink>
+            <NavLink to="/login">Login</NavLink>
+          </li>
+          <li>
+            <NavLink to="/register">Sign Up</NavLink>
+          </li>
+          <li>
+            <NavLink to="/api/plants">View All Plants</NavLink>
           </li>
           <li>
             <NavLink to="/addplant">Add Plant</NavLink>

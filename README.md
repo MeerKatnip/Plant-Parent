@@ -13,13 +13,16 @@ A user will create an account with an email address and password. The user will 
 
 - Plants are added to the user's account database by name. Users will be able to access info about the plant species and care instructions including watering, sunlight, and nutrient needs. Individual plant needs are broken down by user's geolocation tag and current weather patterns to advise them of when to water or fertilize a plant. App will display the amount of days remaining until it's time to water or fertilize a plant, e.g "Water me in two days", "Water me today!", "Feed me in 10 days."
 - Users can name their plant, including taking a "baby photo" of their plant to document the growth of their little sprout.
--
+
+##### Future features:
+
+- Moisture sensor integration to give accurate, detailed information about water and soil needs.
 
 ## Site Preview
 
 ##### Home Page:
 
-##### Login Page:
+<img src="images/PlantParent.gif">
 
 ## Live Link
 

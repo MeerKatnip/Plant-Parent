@@ -5,11 +5,13 @@ import { App, Menu } from "./App";
 import * as serviceWorker from "./serviceWorker";
 // import { BaseLayout } from "./components/BaseLayout";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import DisplayPlants from "./components/DisplayPlants";
 import AddPlant from "./components/AddPlant";
 import PlantDetails from "./components/PlantDetails";
-import RegistrationForm from "./components/RegistrationForm/RegistrationForm";
-import Login from "./components/Login";
+import About from "./components/About";
+// import RegistrationForm from "./components/RegistrationForm/RegistrationForm";
+// import Login from "./components/Login";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -20,8 +22,9 @@ ReactDOM.render(
           <Route component={DisplayPlants} path="/api/plants" exact />
           <Route component={AddPlant} path="/addplant" />
           <Route component={PlantDetails} path="/displayplants/:plantId" />
-          <Route component={RegistrationForm} path="/register" />
-          <Route component={Login} path="/login" />
+          <Route component={About} path="/about" />
+          {/* <Route component={RegistrationForm} path="/register" /> */}
+          {/* <Route component={Login} path="/login" /> */}
         </Switch>
       </App>
     </BrowserRouter>
