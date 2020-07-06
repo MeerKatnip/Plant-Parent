@@ -22,7 +22,7 @@ A user will create an account with an email address and password. The user will 
 
 ##### Home Page:
 
-![Plant Parent home page demo](img/PlantParent.gif)
+<img src="images/PlantParent.gif">
 
 ## Live Link
 
