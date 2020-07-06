@@ -19,23 +19,24 @@ function DisplayPlants() {
     return (
       <div>
         <h4>My Plants</h4>
-
-        <dl>
-          <dt>{plant.name}</dt>
-          <img src={formatPlantURL(plant.photoURL)} alt="plant" />
-          <dd>
-            <b>Light Needs: </b>
-            {plant.light}
-          </dd>
-          <dd>
-            <b>Water/Soil Needs: </b>
-            {plant.water}
-          </dd>
-          <dd>
-            <b>Lifespan: </b>
-            {plant.lifespan}
-          </dd>
-        </dl>
+        <div>
+          <dl>
+            <dt>{plant.name}</dt>
+            <img src={formatPlantURL(plant.photoURL)} alt="plant" />
+            <dd>
+              <b>Light Needs: </b>
+              {plant.light}
+            </dd>
+            <dd>
+              <b>Water/Soil Needs: </b>
+              {plant.water}
+            </dd>
+            <dd>
+              <b>Lifespan: </b>
+              {plant.lifespan}
+            </dd>
+          </dl>
+        </div>
       </div>
     );
   });
